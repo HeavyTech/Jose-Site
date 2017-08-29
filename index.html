@@ -14,7 +14,28 @@
         <!-- Font-Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+        <!--Dev Icons -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsById("mySlides")
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
     </header>
 
     <section class="hero is-dark is-medium is-centered" id="home">
@@ -59,13 +80,18 @@
                     Developer | <strong>	&#127866;</strong>
                 </h2>
             </div>
-            <div class="icon-slider">
-                <i class="devicon-java-plain"></i>
-                <i class="devicon-cplusplus-line"></i>
-                <i class="devicon-python-plain-wordmark"></i>
-                <i class="devicon-mysql-plain"></i>
+
+
+
+            <div class="mySlides">
+                <i class="devicon-java-plain" id="mySlides"></i>
+                <i class="devicon-cplusplus-line" id="mySlides"></i>
+                <i class="devicon-python-plain-wordmark" id="mySlides"></i>
+                <i class="devicon-mysql-plain" id="mySlides"></i>
 
             </div>
+
+
         </div>
     </section>
 
@@ -140,6 +166,7 @@
         </section>
     </div>
 
+    <!--
     <div id="about">
         <section class="section is-dark is-medium">
             <div class="container">
@@ -152,6 +179,7 @@
             </div>
         </section>
     </div>
+-->
 
     <section class="section is-medium" id="contact">
         <div class="container">
