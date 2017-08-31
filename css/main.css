@@ -40,5 +40,23 @@ img {
 
 .icon-slider {
     text-align: center;
-    font-size: 100px;
+    font-size: 60px;
+}
+
+#projectHeader {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+}
+
+.aboutMe {
+    text-align: center;
+    padding: 25px;
+    border-style: double;
+}
+
+.main-title {
+    font-size: 50px;
 }
