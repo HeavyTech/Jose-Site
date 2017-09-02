@@ -70,10 +70,31 @@ img {
     text-align: center;
 }
 
+.titleLogo {
+    text-align: center;
+    border-top: solid black;
+    border-bottom: solid black;
+    padding: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#projectLogo {
+    text-align: center;
+    color: white;
+}
+
+#projectLine {
+    color: white;
+}
+
 .aboutMe {
+    font-family: Lato;
+    font-style: normal;
+    font-variant: normal;
     text-align: center;
     padding: 25px;
-    border-style: double;
     max-width: 100%;
     height: auto;
     -webkit-animation: fadein 3s ease-in;
