@@ -22,45 +22,52 @@
 
         <!--Dev Icons -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
 
 
-    <header class="navbar is-dark">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item">
-                            Test<img src="images/bulma-type-white.png" alt="Logo">
-                        </a>
-            </div>
-            <div class="navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <nav class="navbar">
 
-            </div>
-            <div class="navbar-end navbar-menu">
-                <a class="navbar-item is-active" href="#home">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                        Test<img src="images/bulma-type-white.png" alt="Logo">
+                        </a>
+
+
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end has-dropdown">
+                    <a class="navbar-item is-hoverable" href="#home">
 							Home
 						</a>
-                <a class="navbar-item" href="#projects">
+                    <a class="navbar-item is-hoverable" href="#projects">
 							Projects
 						</a>
-                <a class="navbar-item" href="#about">
+                    <a class="navbar-item is-hoverable" href="#about">
 							About Me
 						</a>
-                <a class="navbar-item" href="#contact">
+                    <a class="navbar-item is-hoverable" href="#contact">
 							Contact
 						</a>
+                </div>
             </div>
+
+            <div class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
         </div>
-    </header>
 
-    <section class="hero is-dark is-medium is-centered" id="home">
+
+
+
+
+    </nav>
+
+    <section class="hero is-dark is-centered" id="home">
         <div class="hero-head">
-
-
             <div class="hero-body">
                 <div class="container has-text-centered ">
                     <h1 class="main-title">
