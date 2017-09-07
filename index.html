@@ -23,6 +23,37 @@
         <!--Dev Icons -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                // Get all "navbar-burger" elements
+                var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+                // Check if there are any nav burgers
+                if ($navbarBurgers.length > 0) {
+
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(function($el) {
+                        $el.addEventListener('click', function() {
+
+                            // Get the target from the "data-target" attribute
+                            var target = $el.dataset.target;
+                            var $target = document.getElementById(target);
+
+                            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                            $el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+
+                        });
+                    });
+                }
+
+            });
+
+        </script>
+
+
     </head>
 
 
@@ -33,38 +64,33 @@
                         Test<img src="images/bulma-type-white.png" alt="Logo">
                         </a>
 
+            <div class="navbar-burger burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
             <div id="navMenu" class="navbar-menu">
-                <div class="navbar-end has-dropdown">
-                    <a class="navbar-item is-hoverable" href="#home">
+                <div class="navbar-end">
+
+                    <a class="navbar-item  is-active" href="#home">
 							Home
 						</a>
-                    <a class="navbar-item is-hoverable" href="#projects">
+                    <a class="navbar-item" href="#projects">
 							Projects
 						</a>
-                    <a class="navbar-item is-hoverable" href="#about">
+                    <a class="navbar-item" href="#about">
 							About Me
 						</a>
-                    <a class="navbar-item is-hoverable" href="#contact">
+                    <a class="navbar-item" href="#contact">
 							Contact
 						</a>
                 </div>
             </div>
-
-            <div class="navbar-burger" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
-
         </div>
-
-
-
-
-
     </nav>
+
 
     <section class="hero is-dark is-centered" id="home">
         <div class="hero-head">
@@ -98,7 +124,7 @@
                     <h1><i>About me</i></h1>
 
                 </div>
-                <div class="aboutMe ">
+                <div class="aboutMe">
                     <div>
                         <p>My name is Jose Virgen and I recently graduated from California State University Los Angeles with a B.S. in Computer Science. Below you can see the work that I have accomplished during my academic years, both in and out of classroom I have completed course work with <strong>Java, C++, Python, MySQL</strong>, and other languages. This work has exposed me to an extensive set of programming experience such as creating application for Windows 8, creating various types of websites, managing databases, and even building 2D games from scratch! However, the project I am most proud of is the result of my Senior Design course, where my peers and I worked for an entire year on a live project for AT&amp;T,which gave a taste of a real production enviroment. As of now, I am looking for a new chanllange where I can use my skills to push a team, company or institution forward!
 
@@ -109,7 +135,7 @@
         </section>
     </div>
 
-    <div id="projects ">
+    <div id="projects">
         <section class="section is-dark ">
             <div class=" container is-fluid ">
                 <div class="content ">
@@ -180,24 +206,24 @@
 
 
 
-    <section class="section is-medium " id="contact ">
+    <section class="section is-medium " id="contact">
         <div class="container ">
             <h1 class="title ">Contact</h1>
             <h2 class="subtitle ">
                 Need a site? Just let me know!
             </h2>
 
-            <form action="https://formspree.io/j.virgen87@gmail.com " method="POST">
-                <div class="field ">
-                    <div class="control has-icons-left has-icons-right ">
-                        <input name="email " class="input is-medium " type="email " placeholder="Email ">
-                        <span class="icon is-left is-small ">
+            <form action="https://formspree.io/j.virgen87@gmail.com" method="POST">
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input name="email" class="input is-medium" type="email" placeholder="Email">
+                        <span class="icon is-left is-small">
 							<i class="fa fa-envelope "></i>
 						</span>
                     </div>
                 </div>
 
-                <div class="field ">
+                <div class="field">
                     <label class="label ">Message</label>
                     <div class="control ">
                         <textarea name="message " class="textarea " placeholder="Textarea "></textarea>
@@ -206,7 +232,7 @@
 
 
 
-                <div class="field is-grouped ">
+                <div class="field is-grouped">
 
                     <div class="control ">
                         <button class="button is-primary ">Submit</button>
