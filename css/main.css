@@ -19,8 +19,9 @@ img {
     box-shadow: none !important;
 }
 
-.navClass {
-    color: white;
+a.navbar-item.is-white:hover {
+    
+    color: black !important;
 }
 
 .is-dark {
