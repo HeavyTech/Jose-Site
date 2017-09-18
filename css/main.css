@@ -24,6 +24,12 @@ a.navbar-item.is-white:hover {
     color: black !important;
 }
 
+@media (max-width:1008px){
+    a.navbar-item.is-active{
+    color:black !important;
+}
+}
+
 .is-dark {
     background-color: #363636 !important;
     border-bottom: solid 1px #505050;
