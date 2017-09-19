@@ -20,14 +20,24 @@ img {
 }
 
 a.navbar-item.is-white:hover {
-    
     color: black !important;
 }
 
-@media (max-width:1008px){
-    a.navbar-item.is-active{
-    color:black !important;
+` @media (max-width:1008px) {
+    a.navbar-item.is-active {
+        color: black !important;
+    }
 }
+
+#starship {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1008px) {
+    #starship {
+        flex-direction: column;
+    }
 }
 
 .is-dark {

@@ -8,85 +8,54 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-
         <!-- Bulma -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-
         <!-- Font-Awesome -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!--Font Lalo-->
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
         <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato' type='text/css' />
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence" />
-
         <!--Dev Icons -->
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-
+            document.addEventListener('DOMContentLoaded', function () {
                 // Get all "navbar-burger" elements
                 var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
                 // Check if there are any nav burgers
                 if ($navbarBurgers.length > 0) {
-
                     // Add a click event on each of them
-                    $navbarBurgers.forEach(function($el) {
-                        $el.addEventListener('click', function() {
-
+                    $navbarBurgers.forEach(function ($el) {
+                        $el.addEventListener('click', function () {
                             // Get the target from the "data-target" attribute
                             var target = $el.dataset.target;
                             var $target = document.getElementById(target);
-
                             // Toggle the class on both the "navbar-burger" and the "navbar-menu"
                             $el.classList.toggle('is-active');
                             $target.classList.toggle('is-active');
-
                         });
                     });
                 }
-
             });
-
         </script>
-
-
     </head>
-
     <nav class="navbar is-dark">
-
         <div class="navbar-brand">
-        
-
-            <div class="navbar-burger burger" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </div>
+            <div class="navbar-burger burger" data-target="navMenu"> <span></span> <span></span> <span></span> </div>
         </div>
         <div class="navbar-menu" id="navMenu">
-            <div class="navbar-end is-white">
-            <a class="navbar-item is-white is-active" href="#home">
+            <div class="navbar-end is-white"> <a class="navbar-item is-white is-active" href="#home">
                     Home
-                </a>
-            <a class="navbar-item is-white" href="#projects">
+                </a> <a class="navbar-item is-white" href="#projects">
                     Projects
-                </a>
-            <a class="navbar-item is-white" href="#about">
+                </a> <a class="navbar-item is-white" href="#about">
                     About Me
-                </a>
-            <a class="navbar-item is-white" href="#contact">
+                </a> <a class="navbar-item is-white" href="#contact">
                     Contact
-                </a>
+                </a> </div>
         </div>
-        </div>
-        
     </nav>
-
     <section class="hero is-dark is-centered" id="home">
         <div class="hero-head">
             <div class="hero-body">
@@ -96,51 +65,29 @@
                     </h1>
                     <h2 class="subtitle">
                         Developer | <strong>&#x1f4bb;</strong>
-                    </h2>
-                </div>
-
-                <div class="icon-slider">
-                    <i class="devicon-java-plain"></i>
-                    <i class="devicon-cplusplus-line"></i>
-                    <i class="devicon-python-plain-wordmark"></i>
-                    <i class="devicon-mysql-plain"></i>
-
-                </div>
-
+                    </h2> </div>
+                <div class="icon-slider"> <i class="devicon-java-plain"></i> <i class="devicon-cplusplus-line"></i> <i class="devicon-python-plain-wordmark"></i> <i class="devicon-mysql-plain"></i> </div>
             </div>
         </div>
     </section>
-
     <div id="about">
         <section class="section is-light">
             <div class="container">
                 <div class="titleLogo">
-
-                    <h1><i>About me</i></h1>
-
-                </div>
+                    <h1><i>About me</i></h1> </div>
                 <div class="aboutMe">
                     <div>
                         <p>My name is Jose Virgen and I recently graduated from California State University Los Angeles with a B.S. in Computer Science. During my academic career, I gained experienced in <strong>Java, C++, Python, MySQL, </strong>and a few other languages. This work has exposed me to an extensive set of programming experience such as creating application for Windows 8, creating various types of websites, managing databases, and even building 2D games from scratch! However, I am most proud of my senior design project, where my peers and I worked for an entire year on a live project for AT&amp;T which gave us a taste of a real production environment. Currently, I am looking for a new challenge where I can use my skills to push a team, company or institution forward!</p>
-
                     </div>
                 </div>
-
             </div>
         </section>
     </div>
-
     <div id="projects">
-
         <section class="section is-dark ">
-
-
             <div class=" container ">
                 <div class="projectLogo">
-
-                    <h1><i>Projects</i></h1>
-
-                </div>
+                    <h1><i>Projects</i></h1> </div>
                 <div class="content ">
                     <div class="tile is-ancestor ">
                         <div class="tile is-vertical is-12 ">
@@ -150,34 +97,25 @@
                                         <p class="subtitle ">Machine Learning for Signal Quality Monitoring sponsored by AT&amp;T</p>
                                         <hr>
                                         <p>The purpose of this project was to develop a web service in conjunction with a mobile application to to handle push notifications regarding anomalies in signal quality for AT&amp;T. </p>
-
                                         <ul>
-                                            <li>Accountable for creating a registration page with proper encryption for passwords.
-                                            </li>
-                                            <li>Assisted in building the server side which allowed connections between the Android app and server.
-                                            </li>
-                                            <li>Assisted in building queries that user will be able to use through the app.
-                                            </li>
+                                            <li>Accountable for creating a registration page with proper encryption for passwords. </li>
+                                            <li>Assisted in building the server side which allowed connections between the Android app and server. </li>
+                                            <li>Assisted in building queries that user will be able to use through the app. </li>
                                         </ul>
+                                        <p>You can preview my code on <a href="https://github.com/HeavyTech/SeniorDesignData/blob/master/dependencies/UserManagement/src/mongo/db/MongoService.java">GitHub</a></p>
                                     </article>
-
                                     <article class="tile is-child box ">
                                         <p class="subtitle ">Starship Fighter</p>
                                         <hr>
-                                        <p>
-                                            <strong>Starship Fighter</strong> gameplay initializes the player at the bottom of the screen while enemy aircraft starts to follow you and fire at you. You are able to get hit 5 times before you starship fighter gets destroyed.This game was developed using Python along with the artwork of <a href="https://kenney.nl/ "><strong>Kenney</strong></a>.Game includes extra guns, shields, bonus. Game was inspired by Galaga from the 80's.
-
-                                        </p>
+                                        <div id="starship">
+                                            <p> <strong>Starship Fighter</strong> gameplay initializes the player at the bottom of the screen while enemy aircraft starts to follow you and fire at you. You are able to get hit 5 times before you starship fighter gets destroyed.This game was developed using Python along with the artwork of <a href="https://kenney.nl/ "><strong>Kenney</strong></a>.Game includes extra guns, shields, bonus. Game was inspired by Galaga from the 80's. </p> <img id="bear" src="pictures/kids_bear-512.png" width="170" height="170"> </div>
                                     </article>
                                 </div>
                                 <div class="tile is-parent ">
                                     <article class="tile is-child box ">
                                         <p class="subtitle ">Taxi Road Application.</p>
                                         <hr>
-                                        <p>Application parses data from <a href="https://www.openstreetmap.org/ ">Open Street Map</a>. It will calculate the fastest route to the given destination. In the example we had put two "Taxis " on the map and we were able to calculate which taxi had the fastest route.This application uses Java, with Eclipse as the core project language and as implementation of the project's Breadth-First Search algorithm. </p>
-                                        <img src="pictures/taxi.png ">
-
-                                    </article>
+                                        <p>Application parses data from <a href="https://www.openstreetmap.org/ ">Open Street Map</a>. It will calculate the fastest route to the given destination. In the example we had put two "Taxis " on the map and we were able to calculate which taxi had the fastest route.This application uses Java, with Eclipse as the core project language and as implementation of the project's Breadth-First Search algorithm. </p> <img src="pictures/taxi.png "> </article>
                                 </div>
                             </div>
                         </div>
@@ -186,69 +124,47 @@
             </div>
         </section>
     </div>
-
-
     <section class="section" id="contact">
         <div class="container ">
             <h1 class="title ">Contact</h1>
             <h2 class="subtitle ">
                 <i>Impressed? Contact me</i>
             </h2>
-
             <form action="https://formspree.io/j.virgen87@gmail.com" method="POST">
                 <div class="field">
                     <div class="control has-icons-left has-icons-right">
-                        <input name="email" class="input is-medium" type="email" placeholder="Email">
-                        <span class="icon is-left is-small">
+                        <input name="email" class="input is-medium" type="email" placeholder="Email"> <span class="icon is-left is-small">
 							<i class="fa fa-envelope "></i>
-						</span>
-                    </div>
+						</span> </div>
                 </div>
-
                 <div class="field">
                     <label class="label ">Message</label>
                     <div class="control ">
                         <textarea name="message " class="textarea " placeholder="Textarea "></textarea>
                     </div>
                 </div>
-
                 <div class="field is-grouped">
                     <div class="control ">
                         <button class="button is-primary ">Submit</button>
                     </div>
                 </div>
             </form>
-
-
-
         </div>
     </section>
-
-
     <footer class="footer is-dark has-text-centered ">
         <div class="columns is-mobile is-one-forth ">
-            <div class="column ">
-                &copy;JoseVirgen
-            </div>
-
+            <div class="column "> &copy;JoseVirgen </div>
             <div class="column ">
                 <a href="https://www.linkedin.com/in/jose-virgen-811719b8/ "><img src="pictures/linkedin2-48.png "></a>
             </div>
-
             <div class="column ">
                 <a href="https://github.com/Heavytech "><img src="pictures/bigGitHub.png "></a>
             </div>
-
             <div class="column ">
                 <a href="https://twitter.com/Heavy_Tech "><img src="pictures/bigTwitter.png "></a>
             </div>
-
         </div>
-
     </footer>
-
-
-
 </body>
 
 </html>
