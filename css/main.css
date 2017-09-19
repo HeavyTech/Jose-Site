@@ -40,6 +40,11 @@ a.navbar-item.is-white:hover {
     }
 }
 
+#attLogo {
+    display: flex;
+    align-items: center;
+}
+
 .is-dark {
     background-color: #363636 !important;
     border-bottom: solid 1px #505050;
